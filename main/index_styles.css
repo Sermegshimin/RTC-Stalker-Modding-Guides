@@ -1,0 +1,116 @@
+*{
+	margin: 0;
+}
+
+body 
+{
+	background-color: rgba(36, 43, 75, 1.0);
+}
+
+/* Header Start */
+header
+{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	
+	background-image: linear-gradient(to right, rgba(255, 255, 255, 0.75), rgba(97, 89, 162, 0.76)); /*rgba(212, 229, 248, 0.8)*/
+	
+	height: 5vh;
+	box-sizing: border-box;
+	
+	font-size: 2.5vh;
+	font-weight: bold;
+	text-align: right;
+	font-family: vt323;
+}
+
+#main_block
+{
+	display: flex;
+	justify-content: start;
+	align-items: center;
+}
+#logo_img
+{
+	width: auto;
+	height: 4vh;
+	padding-right: 0.5vw;
+	padding-left: 0.5vw;
+}
+#st
+{
+	color: black;
+}
+
+#discord_logo_img
+{
+	width: auto;
+	height: 3vh;
+	padding-right: 0.5vw;
+	padding-top: 0.4vh;
+}
+/* Header End */
+
+h1
+{
+	color: rgba(254, 229, 130, 0.8);
+	text-align: center;
+	font-size: 3vh;
+	font-family: roboto-mono;
+	
+	margin: 3vh;
+	padding: 2.5vh;
+}
+
+#categories
+{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+    align-items: center;
+}
+.category
+{
+	font-family: kode-mono;
+	text-align: center;
+	font-size: 5vh;
+	color: red;
+	
+	box-sizing: border-box;
+	width: 33vw;
+	height: 70vh;
+	
+	border-style: solid;
+	border-radius: 15px;
+	
+	padding-left: 5vh;
+	padding-right: 5vh;
+	
+	transition-duration: 0.4s;
+}
+#coding_cat:hover
+{
+	background-color: white;
+}
+#u_st_cat:hover
+{
+	background-color: yellow;
+}
+#sp_st_cat:hover
+{
+	background-color: blue;
+}
+#coding_cat
+{
+	background-color: rgba(173, 251, 163, 0.39);
+}
+#u_st_cat
+{
+	background-color: rgba(200, 184, 24, 0.39);
+}
+#sp_st_cat
+{
+	background-color: rgba(15, 216, 205, 0.39);
+}
