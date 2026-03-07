@@ -1,0 +1,23 @@
+@font-face {
+  font-family: 'vt323'; 
+  src: url('VT323-Regular.ttf');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'kode-mono'; 
+  src: url('KodeMono-VariableFont_wght.ttf');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'roboto-mono'; 
+  src: url('RobotoMono-VariableFont_wght.ttf');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+
