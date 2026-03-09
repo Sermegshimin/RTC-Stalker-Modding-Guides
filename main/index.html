@@ -2,51 +2,30 @@
 <html lang="en">
 	<head> 
 		<link rel="stylesheet" href="index_styles.css">
-		<link rel="stylesheet" href="font/font.css">
+		<link rel="stylesheet" href="font/fonts.css">
+		<script src="javascript/index.js" defer></script>
 	</head>
 
 	<body>
+		<audio id="hover_sound" src="../sounds/on_hover3.mp3" preload="auto"></audio>
+		
+
 		<header> 
 			<div id="main_block">
-				<img id="logo_img" src="images/rtc_logo.png">
-				<div id="st"> Return to Chernobyl S.T.A.L.K.E.R. Modding Guides</div>
+				<img id="logo_img" src="../images/rtc_logo.png">
+				<div id="st"></div>
 			</div>
 			<div>			
-				<img id="discord_logo_img" src="images/discord_logo.png">
+				<img id="discord_logo_img" src="../images/discord_logo.png">
 			</div>
 		</header>
 		
-		<h1>
-			This is a collection of various guides for modding S.T.A.L.K.E.R. games, ranging from coding basics 
-			and universally applied basics of modding the game to specific guides for games and mods, 
-			such as S.T.A.L.K.E.R. Anomaly, Call of Chernobyl, OpenXray engine and our Return to Chernobyl
-		</h1>
+		<h1 id="h1"></h1>
 		
 		<div id="categories"> 
-			<button id="coding_cat" class="category"> Coding </button>
-			<button id="u_st_cat" class="category"> Universal modding basics </button>
-			<button id="sp_st_cat" class="category"> Mod-specific S.T.A.L.K.E.R. guides </button>
+			<button id="coding_cat" class="category"></button>
+			<button id="u_st_cat" class="category"></button>
+			<button id="sp_st_cat" class="category"></button>
 		</div>
-		
-		
-		<!-- Audio --!>
-		<audio id="hover_sound" src="sounds/on_hover3.mp3" preload="auto"></audio>
-		
-		
-		<!-- Scripts --!>
-		<script>
-			function play_audio_on_hover() 
-			{
-				document.getElementById("hover_sound").play();
-			}
-			
-			const hover_target = document.getElementById("coding_cat");
-			const sound_on_hover = document.getElementById("hover_sound");
-			hover_target.addEventListener('mouseover', play_audio_on_hover, false)
-			hover_target.addEventListener('mouseout', function() {
-				sound_on_hover.pause();         
-				sound_on_hover.currentTime = 0; 
-			}, false);
-		</script>
 	</body>
 </html>
